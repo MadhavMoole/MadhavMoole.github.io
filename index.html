@@ -1,13 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Page</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Madhav Moole – Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #35495e;
+            color: #fff;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+        header img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 4px solid #fff;
+        }
+        .container { max-width: 960px; margin: auto; padding: 1rem; }
+        h2 { border-bottom: 2px solid #35495e; padding-bottom: 0.3rem; }
+        ul { list-style: none; padding: 0; }
+        li { margin: 0.5rem 0; }
+        a { color: #35495e; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .skills span { display: inline-block; background: #e2e2e2; margin: 0.2rem; padding: 0.3rem 0.6rem; border-radius: 4px; }
+        footer { text-align: center; padding: 1rem; background: #ddd; margin-top: 2rem; }
+    </style>
 </head>
 <body>
-    <h1>Hello, GitHub Actions!</h1>
-    <p>This is a simple test HTML file for the repository.</p>
+    <header>
+        <img src="https://avatars.githubusercontent.com/u/82950053?s=400&v=4" alt="Madhav Moole" />
+        <h1>Madhav Moole</h1>
+        <p>Software Developer – Passionate about building great products</p>
+    </header>
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm a software developer based in Mumbai. I love working with a variety of technologies and continuously learning new skills.</p>
+        </section>
+        <section id="skills">
+            <h2>Languages &amp; Tools</h2>
+            <div class="skills">
+                <span>C#</span><span>CSS3</span><span>Docker</span><span>.NET</span><span>Figma</span><span>Git</span><span>Java</span><span>Kotlin</span><span>Linux</span><span>MongoDB</span><span>MySQL</span><span>Postman</span><span>Python</span><span>Redis</span><span>Spring</span><span>Svelte</span><span>Tailwind</span>
+            </div>
+        </section>
+        <section id="projects">
+            <h2>Featured Projects</h2>
+            <ul>
+                <li><strong><a href="https://github.com/MadhavMoole/ecommerce">ecommerce</a></strong> – Java based e‑commerce platform.</li>
+                <li><strong><a href="https://github.com/MadhavMoole/Hospital">Hospital</a></strong> – JavaScript application for hospital management.</li>
+                <li><strong><a href="https://github.com/MadhavMoole/Frontendmentor-NFTcardChallenge">Frontendmentor NFT Card</a></strong> – CSS challenge showcasing UI design.</li>
+                <li><strong><a href="https://github.com/MadhavMoole/ShoppingClone">ShoppingClone</a></strong> – HTML/CSS clone of a shopping site.</li>
+                <li><strong><a href="https://github.com/MadhavMoole/ElibraryManagement">ElibraryManagement</a></strong> – JavaScript library management system.</li>
+                <li><strong><a href="https://github.com/MadhavMoole/Pandas">Pandas</a></strong> – Jupyter Notebook with data analysis examples.</li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Connect</h2>
+            <ul>
+                <li>GitHub: <a href="https://github.com/MadhavMoole">github.com/MadhavMoole</a></li>
+                <li>LinkedIn: <a href="https://in.linkedin.com/in/madhav-moole-568388259">linkedin.com/in/madhav-moole</a></li>
+                <li>LeetCode: <a href="https://leetcode.com/u/Fmeg/">leetcode.com/u/Fmeg</a></li>
+            </ul>
+        </section>
+    </div>
+    <footer>
+        © 2026 Madhav Moole. All rights reserved.
+    </footer>
 </body>
 </html>
