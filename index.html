@@ -882,6 +882,10 @@
             themeToggle.innerHTML = '<i class="fas fa-moon"></i> Dark';
         } else {
             themeToggle.innerHTML = '<i class="fas fa-sun"></i> Light';
+        }
+        
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('light-mode');
             const isLightMode = document.body.classList.contains('light-mode');
             localStorage.setItem('theme', isLightMode ? 'light' : 'dark');
             if (isLightMode) {
