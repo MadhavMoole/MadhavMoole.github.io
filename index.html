@@ -17,9 +17,9 @@
             --accent: #e2e2e2;
             /* Button colors */
             --btn-bg-light: rgba(255,255,255,0.2);
-            --btn-bg-dark: rgba(255,255,255,0.1);
+            --btn-bg-dark: rgba(0,0,0,0.3);
             --btn-border-light: #fff;
-            --btn-border-dark: #aaa;
+            --btn-border-dark: #fff;
             --btn-text-light: #fff;
             --btn-text-dark: #fff;
         }
@@ -34,6 +34,7 @@
         body.dark-mode {
             background-color: var(--bg-dark);
             color: var(--text-dark);
+            transition: background-color 0.3s, color 0.3s;
         }
         header {
             background: linear-gradient(135deg, var(--primary), #2c3e50);
@@ -110,7 +111,7 @@
             box-shadow: 0 8px 16px rgba(0,0,0,0.2);
             background: #fff;
         }
-        body.dark-mode .project-card { background: var(--bg-dark); border-color: #444; }
+        body.dark-mode .project-card { background: var(--bg-dark); border-color: #555; }
         .project-card a {
             color: var(--primary);
             text-decoration: none;
@@ -152,14 +153,15 @@
             height: 45px;
             font-size: 1.6rem;
             cursor: pointer;
-            display: none;
+            display: flex;
             align-items: center;
             justify-content: center;
             box-shadow: 0 4px 6px rgba(0,0,0,0.2);
             opacity: 0;
+            pointer-events: none;
             transition: opacity 0.3s, transform 0.2s;
         }
-        #scroll-top.show { display: flex; opacity: 1; transform: translateY(0); }
+        #scroll-top.show { opacity: 1; pointer-events: auto; transform: translateY(0); }
         #scroll-top:hover { transform: scale(1.1); }
         html { scroll-behavior: smooth; }
     </style>
