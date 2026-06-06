@@ -21,14 +21,14 @@ jobs:
               uses: actions/checkout@v6
             
             - name: Setup GitHub Pages Configuration
-              uses: actions/configure-pages@v6
+              uses: actions/configure-pages@v5
 
             - name: Upload Static Website Artifacts
-              uses: actions/upload-pages-artifact@v6
+              uses: actions/upload-pages-artifact@v3
               with:
                 path: '.' # Uploads the entire root directory where index.html lives
 
             - name: Deploy to GitHub Pages Live Site
               id: deployment
-              uses: actions/deploy-pages@v6
+              uses: actions/deploy-pages@v4
 
