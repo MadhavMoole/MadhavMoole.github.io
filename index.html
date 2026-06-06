@@ -45,6 +45,9 @@
             box-shadow: 0 4px 6px rgba(0,0,0,0.2);
             animation: fadeIn 0.8s ease-out;
         }
+        body.dark-mode header {
+            background: linear-gradient(135deg, #1a252f, #0d141a);
+        }
         @keyframes fadeIn { from { opacity: 0; transform: translateY(-20px); } to { opacity: 1; transform: none; } }
         #theme-toggle {
             position: absolute;
@@ -152,6 +155,8 @@
             width: 45px;
             height: 45px;
             font-size: 1.6rem;
+            line-height: 45px;
+            text-align: center;
             cursor: pointer;
             display: flex;
             align-items: center;
