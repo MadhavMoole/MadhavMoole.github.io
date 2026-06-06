@@ -92,7 +92,7 @@
         }
         nav a { margin: 0 0.8rem; color: var(--primary); font-weight: 600; text-decoration: none; }
         nav a:hover { text-decoration: underline; }
-        body.dark-mode nav { background: #2a2a2a; }
+        body.dark-mode nav { background: #f0f0f0; }
         body.dark-mode nav a { color: var(--text-dark); }
         h2 { border-bottom: 2px solid var(--primary); padding-bottom: 0.3rem; }
         ul { list-style: none; padding: 0; }
@@ -103,10 +103,13 @@
             margin-top: 1rem;
         }
         .project-card {
+            display: block;
             background: var(--bg-light);
             border: 1px solid var(--accent);
             border-radius: 8px;
             padding: 1.2rem;
+            text-decoration: none;
+            color: inherit;
             transition: transform 0.2s, box-shadow 0.2s, background 0.3s;
         }
         .project-card:hover {
@@ -136,7 +139,9 @@
             border-radius: 4px;
             transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            color: var(--text-light);
         }
+        body.dark-mode .skills span { color: var(--text-dark); }
         .skills span:hover {
             background: var(--primary);
             color: #fff;
@@ -146,8 +151,8 @@
         footer { text-align: center; padding: 1rem; background: var(--accent); margin-top: 2rem; }
         #scroll-top {
             position: fixed;
-            bottom: 2rem;
-            right: 2rem;
+            bottom: 1.5rem;
+            right: 1.5rem;
             background: var(--primary);
             color: #fff;
             border: none;
@@ -198,12 +203,12 @@
         <section id="projects">
             <h2>Featured Projects</h2>
             <div class="projects-grid">
-                <div class="project-card"><strong><a href="https://github.com/MadhavMoole/ecommerce">ecommerce</a></strong> – Java based e‑commerce platform.</div>
-                <div class="project-card"><strong><a href="https://github.com/MadhavMoole/Hospital">Hospital</a></strong> – JavaScript application for hospital management.</div>
-                <div class="project-card"><strong><a href="https://github.com/MadhavMoole/Frontendmentor-NFTcardChallenge">Frontendmentor NFT Card</a></strong> – CSS challenge showcasing UI design.</div>
-                <div class="project-card"><strong><a href="https://github.com/MadhavMoole/ShoppingClone">ShoppingClone</a></strong> – HTML/CSS clone of a shopping site.</div>
-                <div class="project-card"><strong><a href="https://github.com/MadhavMoole/ElibraryManagement">ElibraryManagement</a></strong> – JavaScript library management system.</div>
-                <div class="project-card"><strong><a href="https://github.com/MadhavMoole/Pandas">Pandas</a></strong> – Jupyter Notebook with data analysis examples.</div>
+                <a class="project-card" href="https://github.com/MadhavMoole/ecommerce"><strong>ecommerce</strong> – Java based e‑commerce platform.</a>
+                <a class="project-card" href="https://github.com/MadhavMoole/Hospital"><strong>Hospital</strong> – JavaScript application for hospital management.</a>
+                <a class="project-card" href="https://github.com/MadhavMoole/Frontendmentor-NFTcardChallenge"><strong>Frontendmentor NFT Card</strong> – CSS challenge showcasing UI design.</a>
+                <a class="project-card" href="https://github.com/MadhavMoole/ShoppingClone"><strong>ShoppingClone</strong> – HTML/CSS clone of a shopping site.</a>
+                <a class="project-card" href="https://github.com/MadhavMoole/ElibraryManagement"><strong>ElibraryManagement</strong> – JavaScript library management system.</a>
+                <a class="project-card" href="https://github.com/MadhavMoole/Pandas"><strong>Pandas</strong> – Jupyter Notebook with data analysis examples.</a>
             </div>
         </section>
         <section id="contact">
