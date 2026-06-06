@@ -141,7 +141,11 @@
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
             color: var(--text-light);
         }
-        body.dark-mode .skills span { color: var(--text-dark); }
+        body.dark-mode .skills span {
+            color: var(--text-dark);
+            background: var(--bg-dark);
+            border: 1px solid var(--accent);
+        }
         .skills span:hover {
             background: var(--primary);
             color: #fff;
